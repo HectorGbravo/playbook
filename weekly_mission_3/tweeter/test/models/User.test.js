@@ -12,7 +12,20 @@ describe("Unit test for user class",() => {
         expect(user.bio).toBe("Bio")
         expect(user.dateCreated).toBe("dateCreated")
         expect(user.lastUpdated).toBe("lastUpdated")
-
     });
     
+    test("2. Requeriment about dateCreated and lastupdated must be date types ", () => {
+        const user = new User(1, "mexmovil", "HectorGbravo", "Bio")
+        expect(user.id).toBe(1)
+        expect(user.username).toBe("mexmovil")
+        expect(user.name).toBe("HectorGbravo")
+        expect(user.bio).toBe("Bio")
+        expect(user.dateCreated).not.toBeUndefined() // verifica el valor que no sea undefined
+        expect(user.lastUpdated).not.toBeUndefined()
+    });
+    
+})
+
+test("2. Requeriment about dateCreated and lastupdated must be date types ", () => {
+
 })
