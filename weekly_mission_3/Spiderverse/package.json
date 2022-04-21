@@ -1,0 +1,23 @@
+{
+  "name": "spiderverse",
+  "version": "1.0.0",
+  "description": "Project 2 TDD Spiderverse",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest.js",
+    "start": "index.js"
+  },
+  "keywords": [
+    "TDD",
+    "Jest",
+    "Backend",
+    "Javascript",
+    "Node",
+    "JS"
+  ],
+  "author": "HectorGbravo",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
+}
