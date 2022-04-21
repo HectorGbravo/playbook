@@ -1,0 +1,15 @@
+{
+  "name": "tweeter",
+  "version": "1.0.0",
+  "description": "Project tweeter apliying TDD",
+  "main": "index.js",
+  "scripts": {
+    "test": "node ./node_modules/jest/bin/jest.js"
+  },
+  "keywords": [
+    "twwter",
+    "TDD"
+  ],
+  "author": "HectorGbravo",
+  "license": "ISC"
+}
