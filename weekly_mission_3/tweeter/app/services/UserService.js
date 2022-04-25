@@ -9,9 +9,15 @@ class UserService {
         return Object.values(user)
     }
     
-    static updateUserUsername(user, username){
+    static updateUserUsername(user, username) {
         user.setUsername = username
-      }
+    }
+
+    static getAllUsernames (users) {
+        const usersUsernames = users.map(user => user.username)
+        return usersUsernames
+    }
+
 }
 
 module.exports = UserService
