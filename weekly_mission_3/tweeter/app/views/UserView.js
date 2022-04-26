@@ -1,0 +1,16 @@
+const UserService = require('./../../app/models/User')
+
+class UserView {
+    static createUser(payload) {
+        if(payload === null) {
+            console.log("error, this is null")
+            return {error: "the payload does not exist."}
+        } else if(typeof payload.username === 'string' && typeof payload.name === 'string' && typeof payload.id === 'number') {
+            return UserService.create(payload.id, payload.username, payload.name)
+        } else {
+            return {error: "Error, the payload properties must be a valid value"}
+        }
+    }
+}
+
+module.exports = UserView
