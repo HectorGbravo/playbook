@@ -6,7 +6,7 @@ const FizzbuzzService = require('./../fizzbuzz/lib/services/FizzbuzzService')
 
 const explorers = Reader.readJsonFile('./../fizzbuzz/app/explorers.json')
 
-//console.log(explorers)
+console.log(explorers)
 
 
 // Función de ExplorerService que filtra la lista de explorers por mission node

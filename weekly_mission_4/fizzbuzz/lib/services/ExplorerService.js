@@ -1,20 +1,31 @@
 class ExplorerService {
 
     static filterByMission(explorers, mission) {
-        const explorersByMission = explorers.filter((explorer) => explorer.mission === mission)
-        return explorersByMission
+        if (mission === "node" || mission === "java") {
+            const explorersByMission = explorers.filter((explorer) => explorer.mission === mission)
+            return explorersByMission
+        } else {
+            return console.log("la misión no está en la lista")
+        }
     }
 
     static getAmountOfExplorersByMission(explorers, mission) {
-        const AmountOfExplorersByMission = explorers.filter((explorer) => explorer.mission == "node")
-        return AmountOfExplorersByMission.length
+        if (mission === "node" || mission === "java") {
+            const AmountOfExplorersByMission = explorers.filter((explorer) => explorer.mission === "node")
+            return AmountOfExplorersByMission.length
+        } else {
+            return console.log("la misión no está en la lista")
+        }
         
     }
 
     static getExplorersUsernamesByMission(explorers, mission) {
-        const explorersUsernamesByMission = explorers.filter((explorer) => explorer.mission == "node");
-        return explorersUsernamesByMission.map((explorer) => explorer.githubUsername);
-        
+        if (mission === "node" || mission === "java") {
+            const explorersUsernamesByMission = explorers.filter((explorer) => explorer.mission === "node");
+            return explorersUsernamesByMission.map((explorer) => explorer.githubUsername)
+        } else {
+            return console.log("la misión no está en la lista")
+        }
     }
 }
 
