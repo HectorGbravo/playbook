@@ -7,6 +7,7 @@ describe("Unit test for Explorers class", () => {
         const path = './../fizzbuzz/app/explorers.json'
         const explorer = Explorers.readJsonFile(path)
         expect(explorer).not.toBeUndefined()
+        
     });
     test("2. ExplorerService: Filtrado de la lista de explorers por mission node", () => {
         const path = './../fizzbuzz/app/explorers.json'
